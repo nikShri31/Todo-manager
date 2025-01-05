@@ -3,7 +3,8 @@ import { ApiError } from "../utils/apiError.js";
 import { ApiResponse } from "../utils/apiResponse.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import jwt from "jsonwebtoken";
-//import mongoose from "mongoose";
+
+//-----------------------------------------------------------------------------------------------
 
 const generateAccessAndRefereshTokens = async (userId) => {
   try {
@@ -22,6 +23,8 @@ const generateAccessAndRefereshTokens = async (userId) => {
     );
   }
 };
+
+
 
 // ******* Register user ******
 const registerUser = asyncHandler(async (req, res) => {
